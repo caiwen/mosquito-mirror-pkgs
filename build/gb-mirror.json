@@ -1,0 +1,24 @@
+{
+    "name": "mosquito/mirror-repository",
+    "homepage": "http://47.75.121.152:8889/mirror",
+    "require": {
+        "mosquito/mirror-pkgs": "*"
+    },
+    "require-all": false,
+    "require-dependencies": true,
+    "require-dev-dependencies": false,
+    "output-dir": "/apps/web/working/composer-pkg/mirror",
+    "output-html": true,
+    "archive": {
+        "directory": "dist",
+        "format": "zip",
+        "prefix-url": "http://47.75.121.152:8889/mirror",
+        "skip-dev": true
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:caiwen/mosquito-mirror-pkgs.git"
+        }
+    ]
+}
