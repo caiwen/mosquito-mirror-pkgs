@@ -33,8 +33,8 @@
     - 服务端定期更新（job)
     - hook触发更新
 5. 内部私有Composer资源仓库分类：
-    - 内部仓库：内部项目相关仓库存储，http://10.40.2.181:8889/inner/
-    - 镜像仓库：项目依赖仓库存储，http://10.40.2.181:8889/mirror/
+    - 内部仓库：内部项目相关仓库存储，http://X.X.X.X:8889/inner/
+    - 镜像仓库：项目依赖仓库存储，http://X.X.X.X:8889/mirror/
 6. satis加包流程（服务端）
     1. 添加源：satis add git@gitlab.egomsl.com:dz-department/composer-packages/tools.git
     2. 修改过配置gb-inner.json或者gb-mirror.json，（由于全量镜像过大，需要单独配置require项目包名）
